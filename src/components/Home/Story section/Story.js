@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/home.css';
+import '../../../style/home.css';
 import { StoryImage } from './StoryImage';
 import { StoryName } from './StoryName';
 

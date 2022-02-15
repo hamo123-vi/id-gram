@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/post.css';
+import '../../../style/post.css';
 import { MoreButton } from './MoreButton';
 
 export const More = () => {

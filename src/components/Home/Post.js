@@ -1,7 +1,8 @@
 import React from 'react';
-import { Header } from './Header';
-import { Image } from './Image';
+import { Header } from './Post header/Header';
+import { Image } from './Image'
 import '../../style/post.css';
+import { Footer } from './Post footer/Footer';
 
 export const Post = () => {
 
@@ -9,6 +10,7 @@ export const Post = () => {
         <div className='post'>
             <Header />
             <Image />
+            <Footer />
         </div>
     )
 }

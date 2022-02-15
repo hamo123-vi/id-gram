@@ -1,6 +1,6 @@
 import React from 'react';
-import more from '../../assets/More.png'
-import '../../style/post.css';
+import more from '../../../assets/More.png'
+import '../../../style/post.css';
 
 export const MoreButton = () => {
 

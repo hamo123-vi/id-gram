@@ -1,4 +1,4 @@
-import { Border } from './components/Border';
+import { Border } from './components/Home/Border';
 import { Navigation } from './components/Navigation/Navigation'
 import { Home } from './components/Home/Home';
 import './style/App.css';

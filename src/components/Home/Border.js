@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/navigation.css';
+import '../../style/navigation.css';
 
 export const Border = () => {
 

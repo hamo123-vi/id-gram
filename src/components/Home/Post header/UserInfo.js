@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/post.css';
+import '../../../style/post.css';
 import { UserImage } from './UserImage';
 import { UserName } from './UserName';
 

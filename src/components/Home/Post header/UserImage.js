@@ -1,6 +1,6 @@
 import React from 'react';
-import image from '../../assets/Story-Item.png';
-import '../../style/post.css';
+import image from '../../../assets/1.png';
+import '../../../style/post.css';
 
 export const UserImage = () => {
 

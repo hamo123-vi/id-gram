@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/home.css';
+import '../../../style/home.css';
 import { Story } from './Story';
 
 export const StorySection = () => {

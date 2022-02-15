@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/post.css';
+import '../../../style/post.css';
 import { More } from './More';
 import { UserInfo } from './UserInfo';
 
