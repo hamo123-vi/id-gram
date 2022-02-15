@@ -1,0 +1,86 @@
+.switch-account-container, .suggestion-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.switch-account-container {
+    padding-top: 14px
+}
+
+.profile-picture-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 14px;
+}
+
+.names-container, .switch-button-container {
+    flex-direction: column;
+}
+
+.switch-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+.names-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+
+.user-name, .suggestion-username {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.full-name, .suggestion-fullname {
+    justify-self: center;
+    margin: 0;
+    color: #dbdbdb;
+}
+
+.user-name {
+    margin-top: 9px;
+}
+
+.full-name {
+    margin-bottom: 9px
+}
+
+.user-name, .full-name, .switch-button, .suggestion-fullname, .suggestion-username {
+    font-size: 12px;
+}
+
+.secondary-button {
+    color: rgb(65, 65, 230);
+    background-color: #FFFFFF;
+    outline: 0;
+    border: 0;
+    font-weight: 510;
+    font-size: 12px;
+}
+
+.black {
+    color: black;
+}
+
+.suggestion-container {
+    margin-bottom: 8px;
+}
+
+.suggestion-image {
+    width: 30px;
+    border-radius: 30px;
+    height: 30px
+}
+

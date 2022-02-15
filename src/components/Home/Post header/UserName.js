@@ -5,7 +5,7 @@ export const UserName = () => {
 
     return(
         <div className='user-name'>
-            <h5>amil.valjevac</h5>
+            <p className='post-publisher'>amil.valjevac</p>
         </div>
     )
 }

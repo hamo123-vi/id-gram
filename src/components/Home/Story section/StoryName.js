@@ -5,7 +5,6 @@ export  const StoryName = () => {
 
     return(
         <p className='story-name'>
-            amil.valjevac
-        </p>
+            amil.valjevac</p>
     )
 }
