@@ -3,6 +3,7 @@ import { Navigation } from './components/Navigation/Navigation'
 import { Home } from './components/Home/Home';
 import './style/App.css';
 import { Explore } from './components/Explore screen/Explore';
+import { UserProfile } from './components/Profiles/UserProfile';
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
         <div className='content'>
           <Home />
           <Explore />
+          <UserProfile />
         </div>
     </div>
   )

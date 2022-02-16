@@ -1,0 +1,26 @@
+.profile-header, .profile-picture-container, ..profile-info-container {
+    display: flex;
+}
+
+.profile-picture-container, .profile-info-container {
+    flex-direction: column;
+}
+
+.profile-header {
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-header {
+    align-items: center;
+}
+
+.profile-picture-container, .profile-info-container {
+    justify-content: center;
+}
+
+.profile-info-container {
+    align-items: flex-start;
+}
