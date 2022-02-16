@@ -7,7 +7,8 @@
 }
 
 .switch-account-container {
-    padding-top: 14px
+    padding-top: 14px;
+    padding-bottom: 14px
 }
 
 .profile-picture-container {
@@ -24,7 +25,7 @@
 .switch-button-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding-right: 15px;
 }
@@ -34,7 +35,9 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    text-align: center;
+    text-align: left;
+    width: 60%;
+    padding-left: 15px;
 }
 
 .user-name, .suggestion-username {
@@ -43,13 +46,13 @@
     margin: 0;
 }
 
-.full-name, .suggestion-fullname {
+.full-name, .suggestion-fullname, .links {
     justify-self: center;
     margin: 0;
     color: #dbdbdb;
 }
 
-.user-name {
+#suggestion.user-name {
     margin-top: 9px;
 }
 
@@ -57,7 +60,11 @@
     margin-bottom: 9px
 }
 
-.user-name, .full-name, .switch-button, .suggestion-fullname, .suggestion-username {
+.full-name, .user-name, .links {
+    font-size: 13px;
+}
+
+.switch-button, .suggestion-fullname, .suggestion-username {
     font-size: 12px;
 }
 
@@ -66,12 +73,14 @@
     background-color: #FFFFFF;
     outline: 0;
     border: 0;
-    font-weight: 510;
+    font-weight: 700;
     font-size: 12px;
 }
 
 .black {
     color: black;
+    margin-bottom: 13px;
+    padding: 0 6px
 }
 
 .suggestion-container {
@@ -82,5 +91,32 @@
     width: 30px;
     border-radius: 30px;
     height: 30px
+}
+
+.suggestion-header-container, .links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.suggestion-header-container {
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.links-container {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.suggestion-header-left {
+    font-size: 13px;
+    font-weight: 500;
+    color: #dbdbdb;
+    margin-top: 0;
+    padding-left: 15px;
 }
 

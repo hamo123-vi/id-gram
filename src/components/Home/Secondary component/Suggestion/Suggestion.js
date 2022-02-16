@@ -9,8 +9,8 @@ export const Suggestion = () => {
     return(
         <div className='suggestion-container'>
             <ProfilePictureContainer imgClass='suggestion-image'/>
-            <Names fullnameClass='suggestion-fullname' usernameClass='suggestion-username' />
-            <Switch className='secondary-button' />
+            <Names value='followed by ...' fullnameClass='suggestion-fullname' usernameClass='suggestion-username' />
+            <Switch value='Follow' className='secondary-button' />
         </div>
     )
 }

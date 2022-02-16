@@ -145,9 +145,9 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
     .navigation-outer {
-        width: 80%
+        width: 70%
     }
 }
 
@@ -168,10 +168,15 @@
     .navigation-outer {
         width: 100%
     }
+    
+    .logo-box, .menu-button-container {
+        padding-left: 15px;
+    }
 }
 
 @media only screen and (max-width: 360px) {
     .menu-button-container {
-        width: 190px
+        width: 190px;
+        padding-right: 0px;
     }
 }

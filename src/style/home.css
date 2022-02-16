@@ -1,17 +1,16 @@
 .home-container {
-    position: absolute;
-    top: 80px;
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #FAFAFA;
 }
 
 .primary-home {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 65%;
+    width: 70%;
+    background-color: #FFFFFF;
     border: 1px solid #dbdbdb;
 }
 
@@ -20,7 +19,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 35%;
+    width: 30%;
 }
 
 .story-section {
@@ -109,7 +108,17 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
+    .primary-home {
+        width: 65%
+    }
+
+    .secondary-home {
+        width: 35%
+    }
+}
+
+@media only screen and (max-width: 665px) {
     .home-container, .primary-home, .story-section, .scroll-button-container {
         width: 100%
     }

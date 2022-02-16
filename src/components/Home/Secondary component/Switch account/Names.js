@@ -5,8 +5,8 @@ export const Names = props => {
 
     return(
         <div className='names-container'>
-            <p className={props.usernameClass}>amil.valjevac</p>
-            <p className={props.fullnameClass}>Amil Valjevac</p>
+            <p id={props.id} className={props.usernameClass}>amil.valjevac</p>
+            <p className={props.fullnameClass}>{props.value}</p>
         </div>
     )
 }
