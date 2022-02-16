@@ -41,3 +41,21 @@
     width: 31.229%;
     padding-top:1.45vw
 }
+
+@media only screen and (max-width: 665px) {
+    .small-post-width, .first-one-container {
+        width: 33.33%;
+        padding: 0 !important;
+    }
+
+    .first-one-container {
+        align-items: flex-start;
+    }
+    .big-post {
+        width: 66.66%
+    }
+
+    .first-container, .big-post, #sp {
+        margin-bottom: -4.77px;
+    }
+}

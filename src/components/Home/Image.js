@@ -2,10 +2,10 @@ import React from 'react';
 import '../../style/post.css';
 import image from '../../assets/1.png'
 
-export const Image = () => {
+export const Image = props => {
 
     return(
-        <div className='post-image-container'>
+        <div id={props.id} className='post-image-container'>
             <img src={image} alt='Error' className='post-image' />
         </div>
     )
