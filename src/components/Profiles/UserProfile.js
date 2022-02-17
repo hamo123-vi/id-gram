@@ -5,7 +5,7 @@ import { ProfileHeader } from './ProfileHeader';
 export const UserProfile = () => {
 
     return(
-        <div className='profile-header'>
+        <div className='profile'>
             <ProfileHeader />
         </div>
     )

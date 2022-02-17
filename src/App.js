@@ -13,6 +13,8 @@ export const App = () => {
         <div className='content'>
           <Home />
           <Explore />
+          <br />
+          <br />
           <UserProfile />
         </div>
     </div>
