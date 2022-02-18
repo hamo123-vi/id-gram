@@ -46,10 +46,13 @@
     margin: 0;
 }
 
-.full-name, .suggestion-fullname, .links {
+.links, .full-name, .suggestion-fullname {
+    color: #bebebe;
+}
+
+.full-name, .suggestion-fullname {
     justify-self: center;
     margin: 0;
-    color: #dbdbdb;
 }
 
 #suggestion.user-name {
@@ -93,7 +96,7 @@
     height: 30px
 }
 
-.suggestion-header-container, .links {
+.suggestion-header-container {
     display: flex;
     align-items: center;
     width: 100%;
@@ -105,10 +108,9 @@
 }
 
 .links-container {
-    align-items: flex-start;
     margin-top: 15px;
-    width: 100%;
-    margin-left: 30px;
+    width: 80%;
+    padding-right: 15px;
 }
 
 .suggestion-header-left {

@@ -13,7 +13,7 @@ export const UserProfile = props => {
             <ProfileHeader icon={props.icon}  buttonClass={props.buttonClass} buttonValue={props.buttonValue} fullname={props.fullname}/>
             <ProfileMenu />
             <SmallPostContainer />
-            <Links />
+            <Links id='profile-type'/>
         </div>
     )
 }
