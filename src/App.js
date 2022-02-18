@@ -6,6 +6,8 @@ import { Explore } from './components/Explore screen/Explore';
 import { UserProfile } from './components/Profiles/UserProfile';
 import more from './assets/More.png';
 import options from './assets/Options.png';
+import { RegisterPage } from './components/Auth/RegisterPage';
+import { LoginPage } from './components/Auth/LoginPage';
 
 export const App = () => {
   return (
@@ -20,6 +22,10 @@ export const App = () => {
           <UserProfile icon={more}  buttonClass='follow-button' buttonValue='Follow' fullname='Amil Valjevac'/>
           <br />
           <UserProfile icon={options}  buttonClass='follow-button grey' buttonValue='Edit profile' fullname='Amil Valjevac'/>
+          <br />
+          <RegisterPage />
+          <br />
+          <LoginPage />
         </div>
     </div>
   )
