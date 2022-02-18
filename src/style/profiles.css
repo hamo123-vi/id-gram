@@ -1,31 +1,40 @@
-.profile-header, .profile-picture-container, .profile-info-container, .profile, .general, .follow-button-container {
+.profile-header, .profile-picture-container, .profile-info-container, .profile, .general,
+.follow-button-container, .general-one, .service-info-container, .profile-more-button-container {
     display: flex;
 }
 
-.profile-picture-container, .profile {
+.profile-picture-container, .profile, .profile-info-container, .profile-more-button-container {
     flex-direction: column;
 }
 
-.profile, .profile-header {
+.profile, .profile-header, .service-info-container {
     width: 100%;
-    border: 1px solid #bebebe 
 }
 
-.profile-header {
+.service-info-container, .profile-info-container {
     align-items: flex-start;
+}
+
+.general-one, .profile-picture-container, .general, .service-info-container, .profile-header {
+    align-items: center;
 }
 
 .profile-picture-container {
     width: 30%;
-    align-items: center;
     padding: 0;
     margin: 0;
 }
 
-.general, .profile-info-container {
+.general, .general-one {
     flex-direction: row;
-    align-items: center;
+}
+
+.general, .service-info-container {
     justify-content: flex-start;
+}
+
+.service-info-container, .profile-full-name {
+    margin-top: 20px;
 }
 
 .profile-header {
@@ -37,7 +46,7 @@
 }
 
 .profile-info-container {
-    width: 40%
+    width: 60%
 }
 
 .profile-picture {
@@ -66,8 +75,25 @@
     outline: 0;
     border: 1px solid rgb(57, 57, 247);
     width: 100px;
-    height:30px;
+    height: 30px;
+    padding: 5px 9px;
     border-radius: 5px;
+}
+
+.grey {
+    background-color: #fff;
+    border: 1px solid #bebebe;
+    color: black;
+    font-weight: 700;
+}
+
+.service-info, .profile-full-name {
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+.service-number, .profile-full-name {
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 735px) {
@@ -80,6 +106,12 @@
         margin-left: -2px
     }
 
+    .profile-picture {
+        width: 80%;
+        height: 80%;
+        border-radius: 80%;
+    }
+
     .follow-button-container {
         order: 3;
         width: 100%;
@@ -87,12 +119,12 @@
         margin-top: 2px;
     }
 
-    .profile-info-container {
-        flex-direction: row;
+    .general, .profile-info-container {
+        flex-direction: column;
     }
 
-    .general {
-        flex-direction: column;
+    .service-info-container {
+        display: none;
     }
 
     #profile-more-button-container.more-button-container {

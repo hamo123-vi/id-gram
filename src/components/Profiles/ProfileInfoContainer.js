@@ -1,24 +1,16 @@
 import React from 'react';
-import { MoreButton } from '../Home/Post header/MoreButton';
 import '../../style/profiles.css'
+import { FullName } from './FullName';
+import { GeneralOne } from './GeneralOne';
+import { ServiceInfo } from './ServiceInfo'
 
-export const ProfileInfoContainer = () => {
+export const ProfileInfoContainer = props => {
 
     return(
         <div className='profile-info-container'>
-            
-            <div className='general'>
-                <div class='profile-name'>
-                    amil.valjevac
-                </div>
-                <div className="follow-button-container">
-                    <button className='follow-button'>Follow</button>
-                </div> 
-            </div>
-            
-            <div id='profile-more-button-container' className='more-button-container'>
-                <MoreButton />
-            </div>
+            <GeneralOne icon={props.icon} buttonClass={props.buttonClass} buttonValue={props.buttonValue} />
+            <ServiceInfo />
+            <FullName fullname={props.fullname} />
         </div>
     )
 }

@@ -5,7 +5,7 @@ import '../../../style/post.css';
 export const MoreButton = () => {
 
     return(
-        <div className='more-button-container'>
+        <div className='general-one-button-container'>
             <img src={more} alt='Error' className='more-button' />
         </div>
     )
