@@ -1,13 +1,15 @@
 .profile-header, .profile-picture-container, .profile-info-container, .profile, .general,
-.follow-button-container, .general-one, .service-info-container, .profile-more-button-container {
+.follow-button-container, .general-one, .service-info-container, .profile-more-button-container,
+.profile-menu-container, .profile-menu-option {
     display: flex;
 }
 
-.profile-picture-container, .profile, .profile-info-container, .profile-more-button-container {
+.profile-picture-container, .profile, .profile-info-container, .profile-more-button-container
+.profile-menu-option {
     flex-direction: column;
 }
 
-.profile, .profile-header, .service-info-container {
+.profile, .profile-header, .service-info-container, .profile-menu-container {
     width: 100%;
 }
 
@@ -15,7 +17,8 @@
     align-items: flex-start;
 }
 
-.general-one, .profile-picture-container, .general, .service-info-container, .profile-header {
+.general-one, .profile-picture-container, .general, .service-info-container, .profile-header,
+.profile-menu-option {
     align-items: center;
 }
 
@@ -25,7 +28,7 @@
     margin: 0;
 }
 
-.general, .general-one {
+.general, .general-one, .profile-menu-container {
     flex-direction: row;
 }
 
@@ -87,13 +90,48 @@
     font-weight: 700;
 }
 
-.service-info, .profile-full-name {
+.service-info  {
     margin-right: 40px;
     font-size: 18px;
 }
 
+.profile-full-name {
+    font-size: 16px;
+}
+
 .service-number, .profile-full-name {
     font-weight: bold;
+}
+
+.profile-content {
+    align-self: center;
+}
+
+.profile-menu-option, .profile-menu-container {
+    justify-content: center;
+}
+
+.profile-menu-container {
+    border-top: 1px solid rgba(var(--b38,219,219,219),1);;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.profile-menu-container :hover {
+    cursor: pointer;
+}
+
+.profile-menu-option {
+    background-color: #fff;
+    color: #bebebe;
+    font-weight: 600;
+    padding: 30px 20px;
+    margin-right: 30px
+}
+
+.active {
+    color: black;
+    border-top: 1px solid black;
 }
 
 @media only screen and (max-width: 735px) {
@@ -131,5 +169,11 @@
         height: 100%;
         justify-content: flex-start;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .profile-full-name {
+        margin-top: 2px;
     }
 }
