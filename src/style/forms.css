@@ -1,50 +1,244 @@
-.input-container, .form-container, .container {
+.input-container, .insta-form, .container, .small-border, .small-border-container,
+.fb-login-button-container, .auth-link-container, .app-device-links-container, .desc,
+.icons-container, .lac-container {
     display: flex;
+}
+
+.input-container, .insta-form, .container, .app-device-links-container {
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .container {
-    width: 400px;
     align-self: center;
     background-color: rgba(var(--d87,255,255,255),1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
 }
 
-.form-container {
-    width: 60%;
-}
-
-.input-container, form {
+.input-container, form, .insta-form, .auth-link-container, .desc,
+.app-device-links-container, .container {
     width: 100%;
+}
+
+.credentials-container {
+    margin-left: 5px
+}
+
+.language-container {
+    margin-right: 5px;
+}
+
+.register-form, .login-form, .auth-link-container, .app-device-links-container {
+    width: 350px;
+}
+
+.auth-link-text, .link {
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.auth-link-container {
+    color: rgba(var(--i1d,38,38,38),1);
+}
+
+.link {
+    color: rgba(var(--d69,0,149,246),1);
+    cursor: pointer;
+}
+
+.desc, .register-form, .login-form, .auth-link-container, .icons-container, .lac-container {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.register-form, .login-form, .auth-link-container {
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    margin-top: 10px;
+}
+
+.auth-link-container {
+    height: 70px;
+}
+
+select, input {
+    outline: 0;
+    border: 0;
+}
+
+select {
+    margin: 13px 0;
+    padding-top: 3px;
 }
 
 input {
-    width: 100%;
-    outline: 0;
-    border: 0;
+    width: 75%;
+    border-radius: 3px;
     margin: 5px;
     padding: 9px 0 7px 8px;
     text-overflow: ellipsis;
+    line-height: 18px;
+    font-size: 13px;
+    
 }
 
 .text-input {
     background: rgba(var(--b3f,250,250,250),1);
     border: 1px solid rgba(var(--ca6,219,219,219),1);
-    border-radius: 3px;
-    height: 18px;
     color: rgba(var(--i1d,38,38,38),1);
 }
 
 .submit-button {
-    color: rgba(var(--eca,255,255,255),1);
-    background-color: #0095f6;
-    border: 1px solid transparent;
+    
     margin-top: 12px;
 }
 
+.fb-login-button, .submit-button {
+    background-color: #0095f6 !important;
+    color: rgba(var(--eca,255,255,255),1);
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: auto;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    height: 31.6px;
+    border:0
+}
+
+#fb-white.fb-login-button {
+    background-color: rgba(var(--eca,255,255,255),1) !important;
+    color: #0095f6;
+}
+
+.submit-button, .small-border-container, .fb-login-button {
+    width: calc(75% + 8px)
+}
+
+.small-border-container {
+    flex-grow: 1;
+    flex-direction: row;
+    margin: 10px 40px 18px;
+}
+
+.small-border {
+    width: 100%;
+    background-color: rgba(var(--b38,219,219,219),1);
+    flex-shrink: 1;
+    height: 1px;
+    position: relative;
+    top: 0.45em;
+    flex-grow: 1;
+    border: 0;
+}
+
+.or {
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    text-transform: uppercase;
+}
+
+.fb-login-button-container {
+    color: rgba(var(--i1d,38,38,38),1);
+    justify-content: center;
+    margin: 8px 0 18px;
+    width: 100%;
+}
+
+.fb-icon, .form-title {
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+}
+
+.fb-icon {
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    top: 2px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+}
+
+.blue {
+   background-position: -414px -300px; 
+}
+
+.white {
+    background-position: -414px -259px;
+}
+
+.form-title {
+    display: block;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    height: 51px;
+    width: 175px;
+    margin: 22px auto 12px;
+}
+
+.sign-up-desc {
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 40px 10px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#li {
+    color: grey;
+    cursor: pointer;
+    padding: 0;
+}
+
+.app-device-links-container {
+    margin-bottom: 50px;
+}
+
+.app-device-icon {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#ios-icon {
+    margin-right: 5px
+}
+
+#p-store-icon {
+    margin-left: 5px
+}
+
+#creds.links {
+    word-spacing: normal;
+}
+
+.profile-picture-file-input {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dbdbdb;
+    border-radius: 30px;
+}
+
 @media only screen and (max-width: 399px) {
-    .container {
+    .register-form, .login-form, .auth-link-container, .app-device-links-container {
         width: 100%
     }
 }

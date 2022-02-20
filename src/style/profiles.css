@@ -134,9 +134,17 @@
     border-top: 1px solid black;
 }
 
-#profile-type.links-container {
+#profile-type.links-container, #sign-up.links-container, #log-in.links-container,
+#links-on-register-page.links-container, #links-on-login-page.links-container {
     align-self: center;
     text-align: center;
+    margin:auto;
+    padding:0
+}
+
+#sign-up.links-container {
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 735px) {

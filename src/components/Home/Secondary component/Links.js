@@ -6,7 +6,7 @@ export const Links = props => {
     return(
         <div id={props.id} className='links-container'>
             <p className='links'>
-                About Press Api Job Privacy Terms Top Accounts  Hashtags Language
+                Meta About Blog Press Api Jobs Help Privacy Terms Top Accounts  Hashtags Language Instagram Lite
             </p>
         </div>
     )

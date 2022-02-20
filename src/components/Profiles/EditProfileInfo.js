@@ -1,17 +1,17 @@
 import React from 'react';
-import { Input } from './Form components/Input';
+import { Input } from '../Auth/Form components/Input';
 import '../../style/forms.css';
 
-export const Register = () => {
+export const EditProfileInfo = () => {
 
   return (
         <div className='insta-form'>
             <form>
+                <Input type='file' name='profile-picture' className='profile-picture-file-input' />
                 <Input type='email' name='email' className='text-input' placeholder='Email: ' />
                 <Input type='text' name='full-name' className='text-input' placeholder='Full Name: ' />
                 <Input type='text' name='user-name' className='text-input' placeholder='Username: ' />
-                <Input type='password' name='password' className='text-input' placeholder='Password: ' />
-                <Input type='submit' className='submit-button' value='Sign up' />
+                <Input type='submit' className='submit-button' value='Update' />
             </form>
         </div>
     );
