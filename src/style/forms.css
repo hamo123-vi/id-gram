@@ -1,6 +1,6 @@
 .input-container, .insta-form, .container, .small-border, .small-border-container,
 .fb-login-button-container, .auth-link-container, .app-device-links-container, .desc,
-.icons-container, .lac-container {
+.icons-container, .lac-container, .edit-profile-picture-container {
     display: flex;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .input-container, form, .insta-form, .auth-link-container, .desc,
-.app-device-links-container, .container {
+.app-device-links-container, .container  {
     width: 100%;
 }
 
@@ -32,7 +32,8 @@
     margin-right: 5px;
 }
 
-.register-form, .login-form, .auth-link-container, .app-device-links-container {
+.register-form, .login-form, .auth-link-container, .app-device-links-container,
+.edit-profile-picture-container{
     width: 350px;
 }
 
@@ -50,7 +51,7 @@
     cursor: pointer;
 }
 
-.desc, .register-form, .login-form, .auth-link-container, .icons-container, .lac-container {
+.desc, .register-form, .login-form, .auth-link-container, .icons-container, .lac-container, .edit-profile-picture-container {
     flex-direction: row;
     justify-content: center;
 }
@@ -230,11 +231,19 @@ input {
     word-spacing: normal;
 }
 
-.profile-picture-file-input {
-    width: 30px;
-    height: 30px;
+input#file-upload-button {
+    background-color: red;
+}
+
+.edit-picture {
+    width: 50px;
+    height: 50px;
     border: 1px solid #dbdbdb;
-    border-radius: 30px;
+    border-radius: 50px;
+}
+
+input[type="file"] {
+    display: none;
 }
 
 @media only screen and (max-width: 399px) {
