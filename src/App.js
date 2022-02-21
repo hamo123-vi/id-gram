@@ -9,12 +9,14 @@ import more from './assets/More.png';
 import options from './assets/Options.png';
 import { RegisterPage } from './components/Auth/RegisterPage';
 import { LoginPage } from './components/Auth/LoginPage';
+import { AddPostModal } from './components/Home/Add post modal/AddPostModal';
 
 export const App = () => {
   return (
     <div className='body'>
       <Navigation />
       <Border />
+      <AddPostModal />
         <div className='content'>
           <Home />
           <Explore />
@@ -29,6 +31,8 @@ export const App = () => {
           <LoginPage />
           <br />
           <EditProfileInfo />
+          <br />
+          
         </div>
     </div>
   )

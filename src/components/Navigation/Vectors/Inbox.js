@@ -6,7 +6,7 @@ export const Inbox = () => {
 
     return(
         <div className='menu-icon-container'>
-            <img onClick={() => alert("success")} src={icon} alt="Error" className='menu-icon'/>
+            <img onClick={() => alert("success")} src={icon} alt="Error" className='menu-item'/>
         </div>
     )
 }

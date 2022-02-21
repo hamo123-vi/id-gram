@@ -6,7 +6,7 @@ export const Home = () => {
 
     return(
         <div className='menu-icon-container'>
-            <img src={icon} alt="Error" className='menu-icon'/>
+            <img src={icon} alt="Error" className='menu-itn'/>
         </div>
     )
 }

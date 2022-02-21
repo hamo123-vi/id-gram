@@ -14,7 +14,7 @@ export const Footer = () => {
             <LikeNumber />
             <Description />
             <PostTime />
-            <AddComment />
+            <AddComment buttonClass='post-comment-button' placeholder='Add a comment...'/>
         </div>
     )
 }

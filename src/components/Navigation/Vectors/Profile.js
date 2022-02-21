@@ -6,7 +6,7 @@ export const Profile = () => {
 
     return(
         <div className='menu-icon-container'>
-            <img src={icon} alt="Error" className='menu-icon'/>
+            <img src={icon} alt="Error" className='menu-item'/>
         </div>
     )
 }

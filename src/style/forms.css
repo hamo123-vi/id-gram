@@ -1,10 +1,10 @@
 .input-container, .insta-form, .container, .small-border, .small-border-container,
 .fb-login-button-container, .auth-link-container, .app-device-links-container, .desc,
-.icons-container, .lac-container, .edit-profile-picture-container {
+.icons-container, .lac-container, .edit-profile-picture-container, .label-div {
     display: flex;
 }
 
-.input-container, .insta-form, .container, .app-device-links-container {
+.input-container, .insta-form, .container, .app-device-links-container, .label-div {
     
     flex-direction: column;
     align-items: center;
@@ -246,8 +246,44 @@ input[type="file"] {
     display: none;
 }
 
+#edit.insta-form {
+    width: 350px;
+    align-self: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    padding: 30px 0;
+}
+
+#edit-image.input-container {
+    width:0;
+    align-content: space-between;
+}
+
+.edit-profile-picture-container {
+    padding-left: 38.65px;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+#edit-picture-label {
+    color: #0095f6;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.username-on-edit {
+    font-size: 24px;
+    margin: 0;
+}
+
+.label-div {
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
 @media only screen and (max-width: 399px) {
-    .register-form, .login-form, .auth-link-container, .app-device-links-container {
+    .register-form, .login-form, .auth-link-container, .app-device-links-container, #edit.insta-form {
         width: 100%
     }
 }
