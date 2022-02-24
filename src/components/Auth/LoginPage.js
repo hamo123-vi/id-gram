@@ -30,7 +30,7 @@ export const LoginPage = () => {
                     </p>
                 </div>
             </div>
-            <AuthLink text="Don't have an account?" link='Log in' />
+            <AuthLink text="Don't have an account?" path='/register' link='Sign up' />
             <AppDeviceLinks />
             <Links id='links-on-login-page'/>
             <LanguageAndCredentials />

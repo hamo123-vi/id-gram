@@ -49,6 +49,7 @@
 .link {
     color: rgba(var(--d69,0,149,246),1);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .desc, .register-form, .login-form, .auth-link-container, .icons-container, .lac-container, .edit-profile-picture-container {
@@ -248,6 +249,8 @@ input[type="file"] {
 }
 
 #edit.insta-form {
+    position:fixed;
+    top:20%;
     width: 350px;
     align-self: center;
     align-items: center;

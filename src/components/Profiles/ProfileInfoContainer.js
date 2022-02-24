@@ -8,7 +8,7 @@ export const ProfileInfoContainer = props => {
 
     return(
         <div className='profile-info-container'>
-            <GeneralOne icon={props.icon} buttonClass={props.buttonClass} buttonValue={props.buttonValue} />
+            <GeneralOne path={props.path} icon={props.icon} buttonClass={props.buttonClass} buttonValue={props.buttonValue} />
             <ServiceInfo />
             <FullName fullname={props.fullname} />
         </div>

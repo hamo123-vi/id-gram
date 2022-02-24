@@ -10,7 +10,7 @@ export const UserProfile = props => {
 
     return(
         <div className='profile'>
-            <ProfileHeader icon={props.icon}  buttonClass={props.buttonClass} buttonValue={props.buttonValue} fullname={props.fullname}/>
+            <ProfileHeader path={props.path} icon={props.icon}  buttonClass={props.buttonClass} buttonValue={props.buttonValue} fullname={props.fullname}/>
             <ProfileMenu />
             <SmallPostContainer />
             <Links id='profile-type'/>

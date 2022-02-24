@@ -12,7 +12,7 @@ export const AddPostModal = () => {
     return(
         <div id='modal' className='add-post-modal'>
             <div className='cancel-button-container'>
-                <img src={x} class='cancel-button' onClick={cancel} alt='Error' />
+                <img src={x} className='cancel-button' onClick={cancel} alt='Error' />
             </div>
             <ModalBody />
         </div>

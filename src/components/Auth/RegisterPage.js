@@ -40,7 +40,7 @@ export const RegisterPage = () => {
                     </p>
                 </div>
             </div>
-            <AuthLink text='Have an account?' link='Log in' />
+            <AuthLink text='Have an account?' path='/' link='Log in' />
             <AppDeviceLinks />
             <Links id='links-on-register-page'/>
             <LanguageAndCredentials />

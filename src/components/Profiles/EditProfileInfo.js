@@ -39,8 +39,8 @@ export const EditProfileInfo = () => {
         <div id='edit' className='insta-form'>
             <form>
                 <div className='edit-profile-picture-container'>
-                    <img className='edit-picture' src={preview} alt='Error' />
-                    <div class='label-div'>
+                    <img className='edit-picture' src={preview} alt='' />
+                    <div className='label-div'>
                         <p className='username-on-edit'>amil.valjevac</p>
                         <label id='edit-picture-label' htmlFor='editImage' className='image-upload'>
                             Edit profile picture

@@ -23,8 +23,8 @@ export const App = () => {
           <Routes>
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/explore" element={<Explore />} />
-            <Route exact path="/user" element={<UserProfile icon={more}  buttonClass='follow-button' buttonValue='Follow' fullname='Amil Valjevac'/>} />
-            <Route exact path="/me" element={<UserProfile icon={options}  buttonClass='follow-button grey' buttonValue='Edit profile' fullname='Amil Valjevac'/>} />
+            <Route exact path="/user" element={<UserProfile path='' icon={more}  buttonClass='follow-button' buttonValue='Follow' fullname='Amil Valjevac'/>} />
+            <Route exact path="/me" element={<UserProfile path='/edit-info' icon={options}  buttonClass='follow-button grey' buttonValue='Edit profile' fullname='Amil Valjevac'/>} />
             <Route exact path="/register" element={<RegisterPage />} />
             <Route exact path="/" element={<LoginPage />} />
             <Route exact path="/edit-info" element={<EditProfileInfo />} />

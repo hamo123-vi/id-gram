@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../style/profiles.css'
+import { Link } from 'react-router-dom'
 
 export const GeneralOne = props => {
 
@@ -15,7 +16,9 @@ export const GeneralOne = props => {
                 </div> 
             </div>
             <div id='profile-more-button-container' className='more-button-container'>
-                <img src={props.icon} alt='Error' className='more-button' />
+                <Link to={props.path}>
+                    <img src={props.icon} alt='Error' className='more-button' />
+                </Link>
             </div>
         </div>
     )
