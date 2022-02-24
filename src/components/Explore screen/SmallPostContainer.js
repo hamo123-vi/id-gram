@@ -6,17 +6,17 @@ export const SmallPostContainer = () => {
 
     return(
         <div className='second-container'>
-            <div class='small-post small-post-width'>
-                <Image id='sp'/>
+            <div class='small-post'>
+                <Image />
             </div>
-            <div class='small-post small-post-width'>
-                <Image id='sp'/>
+            <div class='small-post'>
+                <Image />
             </div>
-            <div class='small-post small-post-width'>
-                <Image id='sp'/>
+            <div class='small-post'>
+                <Image />
             </div>
-            <div class='small-post small-post-width'>
-                <Image id='sp'/>
+            <div class='small-post'>
+                <Image />
             </div>
         </div>
     )

@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 70%;
-    background-color: #FFFFFF;
+    background-color: white !important;
     border: 1px solid #dbdbdb;
 }
 
@@ -20,6 +20,8 @@
     justify-content: flex-start;
     align-items: center;
     width: 30%;
+    background-color: #FAFAFA;
+    position: static;
 }
 
 .story-section {

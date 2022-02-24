@@ -10,30 +10,27 @@ import options from './assets/Options.png';
 import { RegisterPage } from './components/Auth/RegisterPage';
 import { LoginPage } from './components/Auth/LoginPage';
 import { AddPostModal } from './components/Home/Add post modal/AddPostModal';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export const App = () => {
   return (
-    <div className='body'>
-      <Navigation />
-      <Border />
-      <AddPostModal />
+    <Router>
+      <body>
+        <Navigation />
+        <Border />
+        <AddPostModal />
         <div className='content'>
-          <Home />
-          <Explore />
-          <br />
-          <br />
-          <UserProfile icon={more}  buttonClass='follow-button' buttonValue='Follow' fullname='Amil Valjevac'/>
-          <br />
-          <UserProfile icon={options}  buttonClass='follow-button grey' buttonValue='Edit profile' fullname='Amil Valjevac'/>
-          <br />
-          <RegisterPage />
-          <br />
-          <LoginPage />
-          <br />
-          <EditProfileInfo />
-          <br />
-          
+          <Routes>
+            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/explore" element={<Explore />} />
+            <Route exact path="/user" element={<UserProfile icon={more}  buttonClass='follow-button' buttonValue='Follow' fullname='Amil Valjevac'/>} />
+            <Route exact path="/me" element={<UserProfile icon={options}  buttonClass='follow-button grey' buttonValue='Edit profile' fullname='Amil Valjevac'/>} />
+            <Route exact path="/register" element={<RegisterPage />} />
+            <Route exact path="/" element={<LoginPage />} />
+            <Route exact path="/edit-info" element={<EditProfileInfo />} />
+          </Routes>
         </div>
-    </div>
-  )
+      </body>
+    </Router>
+    )
 }

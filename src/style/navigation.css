@@ -2,10 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
     width: 100%;
-    height: 53px;
+    height: 65px;
     top: 0px;
     z-index: 2;
+    background-color: #fff;
 }
 
 .navigation-outer {
@@ -15,7 +19,7 @@
     align-items: flex-start;
     position: relative;
     width: 50%;
-    height: 53px;
+    height: 65px;
     
 }
 
@@ -25,7 +29,7 @@
     flex-direction: row;
     position: relative;
     width: 100%;
-    height: 53px;
+    height: 70px;
     justify-content: space-between;
     align-items:center;
     flex: none;
@@ -41,18 +45,19 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    height: 36px;
+    justify-content: center;
+    height: 65px;
 }
 
 .logo {
 
     width: 100%;
-    height: 28px;
+    height: 32px;
     position: relative;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 10px 0px;
+    margin-top: 10px
 }
 
 .search-box {
@@ -68,10 +73,10 @@
 
     position: static;
     width: 100%;
-    height: 28px;
+    height: 36px;
     border: 1px solid #DBDBDB;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 8px;
     outline: 0;
     flex: none;
     order: 0;
@@ -80,23 +85,24 @@
     font-family: Segoe UI;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
-    padding-left: 25px;
+    padding-left: 35px;
+    padding-bottom: 10px;
 }
 
 .search-icon-container {
 
-    margin-right: -10%;
+    margin-right: 10%;
     position: absolute;
     padding-left: 10px;
-    top:16px
+    top:28px;
 }
 
 .search-icon {
 
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
 }
 
 .border {
@@ -105,7 +111,7 @@
     height: 1px;
     left: 0px;
     right: 0px;
-    top: 50px;
+    top: 70px;
     z-index: 2;
     background: #DBDBDB;
 }

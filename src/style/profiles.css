@@ -113,8 +113,10 @@
 
 .profile-menu-container {
     border-top: 1px solid rgba(var(--b38,219,219,219),1);;
-    height: 50px;
+    border-bottom: 1px solid rgba(var(--b38,219,219,219),1);;
+    height: 70px;
     margin-top: 25px;
+    margin-bottom: 25px
 }
 
 .profile-menu-container :hover {
@@ -122,7 +124,7 @@
 }
 
 .profile-menu-option {
-    background-color: #fff;
+    background-color: #fafafa;
     color: #bebebe;
     font-weight: 600;
     padding: 30px 20px;
@@ -132,6 +134,7 @@
 .active {
     color: black;
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #profile-type.links-container, #sign-up.links-container, #log-in.links-container,

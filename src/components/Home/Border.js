@@ -4,6 +4,6 @@ import '../../style/navigation.css';
 export const Border = () => {
 
     return(
-        <div className='border'></div>
+        <div id='brd' className='border'></div>
     )
 }

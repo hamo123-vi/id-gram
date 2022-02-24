@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../../style/navigation.css';
 import { Explore } from './Vectors/Explore';
 import { Heart } from './Vectors/Heart';
@@ -11,12 +12,26 @@ export const MenuButton = () => {
 
     return(
         <div className='menu-button-container'>
-            <Home />
+            <Link to='/home'>
+                <Home />
+            </Link>
+            
             <Inbox />
-            <Explore />
+
+            <Link to='/explore'>
+                <Explore />
+            </Link>
+            
             <Upload />
-            <Heart />
-            <Profile />
+
+            <Link to = '/user'>
+                <Heart />
+            </Link>
+            
+            <Link to='/me'>
+                <Profile />
+            </Link>
+
         </div>
     )
 }

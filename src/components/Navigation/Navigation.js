@@ -8,7 +8,7 @@ import '../../style/navigation.css'
 export const Navigation = () => {
 
     return(
-        <div className='navigation-container'>
+        <div id='nav' className='navigation-container'>
             <div className='navigation-outer'>
                 <div className='navigation-inner'>
                     <Logo />

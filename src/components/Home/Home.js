@@ -6,9 +6,9 @@ import { Secondary } from './Secondary';
 export const Home = () => {
 
     return(
-        <div className='home-container'>
-            <Primary />
-            <Secondary />
-        </div>
+            <div className='home-container'>
+                <Primary />
+                <Secondary />
+            </div>
     )
 }

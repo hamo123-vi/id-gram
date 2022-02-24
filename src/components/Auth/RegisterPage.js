@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { hideNav } from '../../assets/js/hideNav';
 import '../../style/forms.css';
 import '../../style/profiles.css';
 import { Links } from '../Home/Secondary component/Links';
@@ -11,6 +12,10 @@ import { Or } from './Or';
 import { Register } from './Register';
 
 export const RegisterPage = () => {
+
+    useEffect(() => {
+        hideNav()
+    },[])
 
   return (
         <div className='container'>

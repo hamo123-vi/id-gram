@@ -6,17 +6,19 @@ export const FirstContainer = () => {
 
     return(
         <div className='first-container'>
-                <div class='first-one-container'>
-                    <div class='small-post'>
-                        <Image />
-                    </div>
-                    <div class='small-post'>
-                        <Image />
-                    </div>
-                </div>
+            
             <div class='big-post'>
                 <Image />
             </div>
+            
+            <div class='small-post'>
+                <Image id="#sp"/>
+            </div>
+
+            <div class='small-post'>
+                <Image id="#spp"/>
+            </div>
+
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../style/forms.css';
 import '../../style/profiles.css';
 import { FbLoginButton } from './FbLoginButton';
@@ -9,8 +9,13 @@ import { Or } from './Or';
 import { AppDeviceLinks } from './AppDeviceLinks';
 import { Links } from '../Home/Secondary component/Links';
 import { LanguageAndCredentials } from './LanguageAndCredentials';
+import { hideNav } from '../../assets/js/hideNav';
 
 export const LoginPage = () => {
+
+    useEffect(() => {
+        hideNav()
+    }, [])
 
   return (
         <div className='container'>
