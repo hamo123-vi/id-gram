@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+import { disableButton } from '../../assets/js/disableButton';
+import { enableButton } from '../../assets/js/enableButton';
 import '../../style/forms.css';
 
 export const Register = () => {
@@ -23,11 +25,17 @@ export const Register = () => {
             password: data.password
         }
 
+        disableButton('sign-up-button');
+
         axios.post('http://localhost:5000/api/v1/auth/register', registerData)
         .then(res => {
             localStorage.setItem("token", res.data.token);
+            enableButton('sign-up-button');
             navigate('/home');
-        }).catch(err => { alert("Error") })
+        }).catch(() => { 
+            alert("Error");
+            enableButton('sign-up-button');
+        })
     }
 
   return (

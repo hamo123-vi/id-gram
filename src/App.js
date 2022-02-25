@@ -13,6 +13,7 @@ import { AddPostModal } from './components/Home/Add post modal/AddPostModal';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export const App = () => {
+
   return (
     <Router>
       <body>
