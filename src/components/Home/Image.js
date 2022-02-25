@@ -6,7 +6,7 @@ export const Image = props => {
 
     return(
         <div id={props.id} className='post-image-container'>
-            <img src={image} alt='Error' className='post-image' />
+            <img src={props.src} alt='Error' className='post-image' />
         </div>
     )
 }

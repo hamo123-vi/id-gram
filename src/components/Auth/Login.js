@@ -25,6 +25,7 @@ export const Login = () => {
 
         axios.post('http://localhost:5000/api/v1/auth/login', loginData)
         .then(res => {
+            localStorage.clear();
             localStorage.setItem("token", res.data.token);
             enableButton('log-in-button'); 
             navigate('/home');

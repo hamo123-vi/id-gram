@@ -1,37 +1,41 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../../style/home.css';
-import arrow from '../../assets/Arrow.png';
+import { useDispatch, useSelector } from 'react-redux';
+import axios from 'axios';
+import { enterPosts, enterPostsList } from '../../../src/rootSlice'
 import { StorySection } from './Story section/StorySection';
 import { Post } from './Post';
 
 export const Primary = () => {
 
-    let [counter, setCounter] = useState(0);
+    const dispatch = useDispatch();
+    const posts = useSelector(state => state.posts);
+    const postsList = useSelector(state => state.postsList)
 
-   /* useEffect(() => {
-        if(counter > 0) {
-            document.getElementById('scroll-left-button-container').style.visibility = 'visible'
-        } else {
-            document.getElementById('scroll-left-button-container').style.visibility = 'hidden'
-            document.getElementById('story-section').style.paddingLeft = '1px'
-        }
-    })
 
-    const scrollRight = () => {
-        setCounter(counter+1);
-        document.getElementById('story-section').scrollBy(250,0);
-        
-    }
+   useEffect(() => {
 
-    const scrollLeft = () => {
-            setCounter(counter-1)
-            document.getElementById('story-section').scrollBy(-250,0);
-    }*/
+            axios.get("http://localhost:5000/api/v1/posts/following", { headers: {
+                Authorization: `Bearer ${localStorage.getItem('token')}`
+            }}).then((res) => {
+
+                dispatch(enterPosts(res.data.posts));
+
+                if(!posts) {
+                    dispatch(enterPostsList("There are no posts yet"));
+                } else {
+                    dispatch(enterPostsList(posts.map((post, k) => 
+                        <Post src={`http://localhost:5000/posts/${post.image}`} key={k} />
+                    )));
+                }
+            });
+
+        }, [])
 
     return(
         <div className='primary-home'>
             <StorySection />
-            <Post />   
+            {postsList}
         </div>
     )
 }

@@ -4,13 +4,13 @@ import { Image } from './Image'
 import '../../style/post.css';
 import { Footer } from './Post footer/Footer';
 
-export const Post = () => {
+export const Post = props => {
 
     return(
         <div className='post'>
             <Header />
-            <Image />
-            <Footer />
+            <Image src={props.src}/>
+            <Footer /> 
         </div>
     )
 }
