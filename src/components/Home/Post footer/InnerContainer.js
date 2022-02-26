@@ -5,7 +5,7 @@ export const InnerContainer = props => {
 
     return(
         <div className='inner-container'>
-            <img className='like-like-icon' src={props.src} alt="Error" />
+            <img className='like-like-icon' src={props.src} onClick={props.onClick} alt="Error" />
         </div>
     )
 }

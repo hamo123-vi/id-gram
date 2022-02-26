@@ -3,11 +3,11 @@ import '../../../style/post.css';
 import { LeftContainer } from './LeftContainer';
 import { RightContainer } from './RightContainer';
 
-export const LikeContainer = () => {
+export const LikeContainer = props => {
 
     return(
         <div className='like-container'>
-            <LeftContainer />
+            <LeftContainer id={props.id}/>
             <RightContainer />
         </div>
     )

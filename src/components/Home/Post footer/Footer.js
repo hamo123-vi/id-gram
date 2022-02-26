@@ -6,15 +6,15 @@ import { Description } from './Description';
 import { PostTime } from './PostTime';
 import { AddComment } from './AddComment';
 
-export const Footer = () => {
+export const Footer = props => {
 
     return(
         <div className='post-footer'>
-            <LikeContainer />
-            <LikeNumber />
+            <LikeContainer id={props.id}/>
+            <LikeNumber likes={props.likes}/>
             <Description />
             <PostTime />
-            <AddComment buttonClass='post-comment-button' placeholder='Add a comment...'/>
+            <AddComment id={props.id} buttonClass='post-comment-button' placeholder='Add a comment...'/>
         </div>
     )
 }

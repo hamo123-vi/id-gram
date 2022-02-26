@@ -10,8 +10,7 @@ const rootSlice = createSlice({
         comment: "",
         description: "",
         image: "",
-        posts: [],
-        postsList: ''
+        posts: []
     },
 
     reducers: {

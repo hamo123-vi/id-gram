@@ -8,9 +8,9 @@ export const Post = props => {
 
     return(
         <div className='post'>
-            <Header />
+            <Header user={props.user}/>
             <Image src={props.src}/>
-            <Footer /> 
+            <Footer src={props.id} user={props.user} id={props.id} description={props.description} likes= {props.likes}/>  
         </div>
     )
 }
