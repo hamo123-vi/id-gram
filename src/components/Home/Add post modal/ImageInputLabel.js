@@ -43,7 +43,6 @@ export const ImageInputLabel = () => {
     const uploadPhoto = (data) => {
 
         disableButton('post-submit-button')
-
         var formData = new FormData();
         formData.append("image", selectedFile);
         formData.append("description", data.description);

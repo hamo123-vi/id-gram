@@ -7,8 +7,8 @@ export const ProfileHeader = props => {
 
     return(
         <div className='profile-header'>
-            <ProfilePictureContainer />
-            <ProfileInfoContainer path={props.path} icon={props.icon}  buttonClass={props.buttonClass} buttonValue={props.buttonValue} fullname={props.fullname}/>
+            <ProfilePictureContainer src={props.image}/>
+            <ProfileInfoContainer path={props.path} icon={props.icon}  buttonClass={props.buttonClass} buttonValue={props.buttonValue} username={props.username} fullname={props.fullname}/>
         </div>
     )
 }

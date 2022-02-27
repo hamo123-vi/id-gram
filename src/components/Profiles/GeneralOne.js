@@ -9,7 +9,7 @@ export const GeneralOne = props => {
             
             <div className='general'>
                 <div class='profile-name'>
-                    amil.valjevac
+                    {props.username}
                 </div>
                 <div className="follow-button-container">
                     <button className={props.buttonClass}>{props.buttonValue}</button>

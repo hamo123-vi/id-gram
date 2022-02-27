@@ -17,19 +17,15 @@ export const Primary = () => {
             axios.get("http://localhost:5000/api/v1/posts/following", { headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }}).then((res) => {
-
                 const posts = res.data.posts;
-                console.log(posts)
                 dispatch(enterPosts(posts))
-                
-
-        })}, [])
+                }) }, []);
 
           let postList = posts.map((post,index)=>{
             return <Post id={post._id} src={`http://localhost:5000/posts/${post.image}`}
-            user={post.user} likes={post.likes.length} key={index}/>
-            
-          })
+            user={post.user} likes={post.likes.length} key={index}/> 
+          });
+
     return(
         <div className='primary-home'>
             <StorySection />

@@ -1,15 +1,14 @@
 import React from 'react';
 import '../../../style/home.css';
-import image from '../../../assets/1.png';
 import { StoryImage } from './StoryImage';
 import { StoryName } from './StoryName';
 
-export const Story = () => {
+export const Story = props => {
 
     return(
         <div className='story'>
-            <StoryImage imgClass='story-image' image={image}/>
-            <StoryName />
+            <StoryImage imgClass='story-image' src={props.src}/>
+            <StoryName username={props.username} />
         </div>
     )
 }

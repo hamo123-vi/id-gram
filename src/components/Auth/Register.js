@@ -19,10 +19,10 @@ export const Register = () => {
     const onSubmit = (data) => {
 
         const registerData = {
-            email: data.email,
-            fullname: data.fullname,
-            username: data.username,
-            password: data.password
+            email: email,
+            fullname: fullname,
+            username: username,
+            password: password
         }
 
         disableButton('sign-up-button');
