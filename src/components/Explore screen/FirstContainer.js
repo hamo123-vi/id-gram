@@ -7,8 +7,6 @@ export const FirstContainer = () => {
 
     const exp = useSelector(state => state.explorePosts);
 
-    console.log(exp)
-
     return(
         <div className='first-container'>
             

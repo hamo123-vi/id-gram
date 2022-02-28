@@ -15,7 +15,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
-import { enterMe } from './rootSlice';
+import { enterMe, enterExplorePosts } from './rootSlice';
 
 export const App = () => {
 
@@ -30,6 +30,12 @@ export const App = () => {
           const me = res.data.data;
           dispatch(enterMe(me))
       });
+
+        axios.get('http://localhost:5000/api/v1/posts/explore', { headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`
+        }}).then((res) => {
+            dispatch(enterExplorePosts(res.data.posts))
+        })
   }, [])
 
   return (

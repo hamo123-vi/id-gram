@@ -62,12 +62,14 @@
 
 .post-image-container {
     width: 100%;
+    box-sizing: border-box;
+    align-items: stretch;
 }
 
 .post-image {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .inner-container, .right-container {

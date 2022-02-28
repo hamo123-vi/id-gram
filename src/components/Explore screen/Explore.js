@@ -4,10 +4,12 @@ import { showNav } from '../../assets/js/showNav';
 import '../../style/explore.css'
 import { FirstContainer } from './FirstContainer';
 import { SmallPostContainer } from './SmallPostContainer';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { enterExplorePosts } from '../../rootSlice';
 
 export const Explore = () => {
+
+    const exp = useSelector(state => state.explorePosts)
 
     const dispatch = useDispatch();
 
