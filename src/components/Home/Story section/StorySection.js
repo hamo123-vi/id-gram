@@ -1,14 +1,15 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch} from 'react-redux';
-import { enterUsers } from '../../../rootSlice';
+import { enterUsers, enterUser } from '../../../rootSlice';
 import '../../../style/home.css';
 import { Story } from './Story';
 
 export const StorySection = () => {
     
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const users = useSelector(state => state.users);
 
     useEffect(() => {
@@ -17,14 +18,23 @@ export const StorySection = () => {
         }}).then((res) => {
             const users = res.data.data;
             dispatch(enterUsers(users))
-        }) }, [users]);
+        }) }, []);
 
     let userList = Array.from(users).map((user,index)=>{
         return (
-        <Link to='/user'>
-            <Story id={user._id} src={`http://localhost:5000/profilepicture/${user.image}`} username={user.username} key={index}/>
-        </Link> )
-      });
+            <div onClick={() => onClick(user._id)}>
+                <Story username={user.username} src={user.image} key={index} onClick={() => onClick(user._id)}/>
+            </div>
+    )});
+
+    function onClick(id)  {
+        axios.get(`http://localhost:5000/api/v1/users/${id}`, {headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`
+        }}).then((res) => {
+            const user = res.data.user;
+            dispatch(enterUser(user));
+            navigate("/user")
+        }) }
 
     return(
         <div id='story-section' className='story-section'>

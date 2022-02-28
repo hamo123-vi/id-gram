@@ -4,6 +4,6 @@ import '../../../style/home.css'
 export const StoryImage = props => {
 
     return(
-        <img src={props.src} className={props.imgClass} alt='Error' />
+        <img src={`http://localhost:5000/profilepicture/${props.src}`} className={props.imgClass} alt='Error' />
     )
 }

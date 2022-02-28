@@ -9,6 +9,7 @@ import more from './assets/More.png';
 import options from './assets/Options.png';
 import { RegisterPage } from './components/Auth/RegisterPage';
 import { LoginPage } from './components/Auth/LoginPage';
+import { MyProfile } from './components/Profiles/MyProfile';
 import { AddPostModal } from './components/Home/Add post modal/AddPostModal';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -22,13 +23,14 @@ export const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    if(localStorage.getItem('token'))
     axios.get("http://localhost:5000/api/v1/auth/me", { headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}`
       }}).then((res) => {
           const me = res.data.data;
           dispatch(enterMe(me))
       });
-  })
+  }, [])
 
   return (
     <Router>
@@ -41,7 +43,7 @@ export const App = () => {
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/explore" element={<Explore />} />
             <Route exact path="/user" element={<UserProfile path='/user' icon={more}  buttonClass='follow-button' buttonValue='Follow'/>} />
-            <Route exact path="/me" element={<UserProfile path='/edit-info' icon={options} fullname={me.fullname} username={me.username}  buttonClass='follow-button grey' buttonValue='Edit profile'/>} />
+            <Route exact path="/me" element={<MyProfile path='/edit-info' src={me.image} icon={options} fullname={me.fullname} username={me.username}  buttonClass='follow-button grey' buttonValue='Edit profile'/>} />
             <Route exact path="/register" element={<RegisterPage />} />
             <Route exact path="/" element={<LoginPage />} />
             <Route exact path="/edit-info" element={<EditProfileInfo username={me.username} image={me.image} fullname={me.fullname} email={me.email}/>} />

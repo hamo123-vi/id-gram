@@ -7,9 +7,9 @@ import { Links } from '../Home/Secondary component/Links';
 import { ProfileHeader } from './ProfileHeader';
 import { ProfileMenu } from './ProfileMenu';
 
-export const UserProfile = props => {
+export const MyProfile = props => {
 
-    const user = useSelector(state => state.user)
+    const user = useSelector(state => state.me)
 
     useEffect(() => {
         showNav()

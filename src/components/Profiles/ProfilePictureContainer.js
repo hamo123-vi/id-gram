@@ -7,7 +7,7 @@ export const ProfilePictureContainer = props => {
 
     return(
         <div className='profile-picture-container'>
-            <StoryImage src={props.image} imgClass='profile-picture'/>
+            <StoryImage src={props.src} imgClass='profile-picture'/>
         </div>
     )
 }
