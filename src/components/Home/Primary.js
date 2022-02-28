@@ -14,7 +14,7 @@ export const Primary = () => {
 
    useEffect(() => {
 
-            axios.get("http://localhost:5000/api/v1/posts/following", { headers: {
+            axios.get("http://localhost:5000/api/v1/posts/following",  { headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }}).then((res) => {
                 const posts = res.data.posts;

@@ -10,6 +10,7 @@ const rootSlice = createSlice({
         comment: "",
         description: "",
         image: "",
+        userProfile: 0,
         me: {},
         users: [],
         posts: [],
@@ -27,7 +28,8 @@ const rootSlice = createSlice({
         enterPosts: (state, action) => {state.posts = action.payload},
         enterMe: (state, action) => {state.me = action.payload},
         enterUsers: (state, action) => {state.users = action.payload},
-        enterUser: (state, action) => {state.user = action.payload}
+        enterUser: (state, action) => {state.user = action.payload},
+        enterUserprofile: (state, action) => {state.userProfile = action.payload}
     }
 });
 
@@ -35,4 +37,4 @@ export const reducer = rootSlice.reducer;
 
 export const {enterFullname, enterUsername, enterEmail, enterPassword,
                 enterComment, enterDescription, enterImage, enterPosts,
-                  enterUsers, enterMe, enterUser} = rootSlice.actions
+                  enterUsers, enterMe, enterUser, enterUserprofile} = rootSlice.actions

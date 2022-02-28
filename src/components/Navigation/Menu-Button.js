@@ -7,8 +7,12 @@ import { Home } from './Vectors/Home';
 import { Inbox } from './Vectors/Inbox';
 import { Profile } from './Vectors/Profile';
 import { Upload } from './Vectors/Upload';
+import { useDispatch } from 'react-redux';
+import { enterUserprofile } from '../../rootSlice';
 
 export const MenuButton = () => {
+
+    const dispatch = useDispatch();
 
     return(
         <div className='menu-button-container'>
@@ -24,11 +28,9 @@ export const MenuButton = () => {
             
             <Upload />
 
-            <Link to = '/user'>
-                <Heart />
-            </Link>
+            <Heart />
             
-            <Link to='/me'>
+            <Link to='/me' onClick={() => dispatch(enterUserprofile(0))}>
                 <Profile />
             </Link>
 

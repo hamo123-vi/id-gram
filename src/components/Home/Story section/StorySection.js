@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch} from 'react-redux';
-import { enterUsers, enterUser } from '../../../rootSlice';
+import { enterUsers, enterUser, enterUserprofile } from '../../../rootSlice';
 import '../../../style/home.css';
 import { Story } from './Story';
 
@@ -23,7 +23,7 @@ export const StorySection = () => {
     let userList = Array.from(users).map((user,index)=>{
         return (
             <div onClick={() => onClick(user._id)}>
-                <Story username={user.username} src={user.image} key={index} onClick={() => onClick(user._id)}/>
+                <Story username={user.username} src={user.image} key={index}/>
             </div>
     )});
 
@@ -33,6 +33,7 @@ export const StorySection = () => {
         }}).then((res) => {
             const user = res.data.user;
             dispatch(enterUser(user));
+            dispatch(enterUserprofile(1));
             navigate("/user")
         }) }
 
