@@ -9,15 +9,6 @@ export const SmallPostContainer = () => {
             <div class='small-post'>
                 <Image />
             </div>
-            <div class='small-post'>
-                <Image />
-            </div>
-            <div class='small-post'>
-                <Image />
-            </div>
-            <div class='small-post'>
-                <Image />
-            </div>
         </div>
     )
 }
